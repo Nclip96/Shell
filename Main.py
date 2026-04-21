@@ -72,7 +72,7 @@ while True:
 
 
     if command == "convert LOG-1":
-        print("Why am I here? It should have ended!")
+        print("Why am I here?")
         print("To anyone who finds this, to access LOCKED-1, enter the code 46273.")
    
     if command == "cat hidden.txt":
@@ -210,4 +210,4 @@ while True:
 
     else:
         if command not in ["help", "list", "cat LOG-1", "cat LOCKED-1", "cat LOCKED-2", "cat LOCKED-3", "cat LOCKED-4", "cat LOCKED-5", "cat LOCKED-6", "cat LOCKED-7", "cat LOCKED-8", "cat LOCKED-9", "cat LOCKED-10", "convert LOG-1", "cat hidden.txt", "penetrate 410.904.9.5", "data.help.IP{410.904.9.5}", "data.list.IP{410.904.9.5}", "data.cat.IP{410.904.9.5} info.txt", "data.cat.IP{410.904.9.5} data.txt", "data.cat.IP{410.904.9.5} CLASSIFIED.txt", "data.cat.IP{410.904.9.5} server.jar", "data.escape.IP{410.904.9.5}", "execute exploit-42216.exe"]:
-            print("Command not recognized. Try checking your spelling or file names.")
+            print("Command not recognized. Use the command help for the list of commands.")
