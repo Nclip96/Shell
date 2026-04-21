@@ -1,22 +1,20 @@
 import time
 from datetime import datetime
 
-
 print("Welcome to CORE OS v1.4")
 time.sleep(0.5)
 print("enter command")
 
-
 while True:
     command = input(">")
-   
+    
     if command == "help":
         print("cat - reads out a file. example: cat example.txt")
         print("convert - checks if a file is encrypted and if so, decrypts it. example: convert example.txt")
         print("penetrate - breaks into servers by IP address. example: penetrate 123.456.7.8")
         print("list - lists files on operating system")
         print("execute - executes a .exe file of your choice. example: execute example.exe")
-   
+    
     if command == "list":
         print("LOCKED-1")
         print("LOCKED-2")
@@ -29,16 +27,16 @@ while True:
         print("LOCKED-8")
         print("LOCKED-9")
         print("LOCKED-10")
-   
+    
     if command == "cat LOG-1":
         print("36,32,60,76,45,99,80,48,83,32,32,62,41,17,80,48,39,72,54,36,35,123,60,61,83,32,36,58,41,14,53,55,55,45,33,77")
         print("FILE MAY BE ENCRYPTED. USE CONVERT COMMAND IF POSSIBLE")
-       
+        
     if command == "cat LOCKED-1":
         LOCKED1pass = input("ENTER KEY:")
         if LOCKED1pass == "46273":
-            print("Well, you must have gotten my last message. This is LOG-2, I'm starting to forget the outside. I can't remember the last time I saw someone... The LOCKED-2 key is the data in hidden.txt. You won't see it, but it's there.")
-   
+            print("Well, you must have gotten my last message. this is LOG-2, I'm starting to forget the outside. I can't remember last time I saw someone... LOCKED-2 key is the data in hidden.txt. You won't see it, but its there.")
+    
     if command == "cat LOCKED-2":
         LOCKED1pass = input("ENTER KEY:")
         if LOCKED1pass == "354768":
@@ -48,50 +46,47 @@ while True:
         LOCKED1pass = input("ENTER KEY:")
         if LOCKED1pass == "563812":
             print("There is no more you could get on this server. Try getting onto the IP 410.904.9.5")
-   
+    
     if command == "cat LOCKED-4":
         print("LOCKED")
-   
+    
     if command == "cat LOCKED-5":
         print("LOCKED")
-   
+    
     if command == "cat LOCKED-6":
         print("LOCKED")
-   
+    
     if command == "cat LOCKED-7":
         print("LOCKED")
-   
+    
     if command == "cat LOCKED-8":
         print("LOCKED")
-   
+    
     if command == "cat LOCKED-9":
         print("LOCKED")
-       
+        
     if command == "cat LOCKED-10":
         print("LOCKED")
 
-
     if command == "convert LOG-1":
-        print("Why am I here?")
+        print("Why am I here? It should have ended!")
         print("To anyone who finds this, to access LOCKED-1, enter the code 46273.")
-   
+    
     if command == "cat hidden.txt":
         print("Good, you found secret file-1. I need to hide these files like this so I THEY can't find them. If you made it this far, you certainly aren't one of them. the password for LOCKED-2 is 354768")
 
-
     if command == "penetrate 410.904.9.5":
         print("ACCESS GRANTED! To use commands on 410.904.9.5, use this command for more info about server commands: data.help.IP{410.904.9.5}")
-   
+    
     if command == "data.help.IP{410.904.9.5}":
         print("data.cat.IP{410.904.9.5} - reads out a file from a server. example: data.cat.IP{410.904.9.5} example.txt")
         print("data.list.IP{410.904.9.5} - lists files on server")
-   
+    
     if command == "data.list.IP{410.904.9.5}":
         print("info.txt")
         print("data.txt")
         print("CLASSIFIED.txt")
         print("server.jar")
-
 
     if command == "data.cat.IP{410.904.9.5} info.txt":
         print("WELCOME TO SERVER 410.904.9.5")
@@ -101,7 +96,6 @@ while True:
         print("MCP.CONNECT('')")
         print("MCP.SELFDESTRUCT()")
         print("end of file.")
-
 
     if command == "data.cat.IP{410.904.9.5} data.txt":
         print("SYSTEM DATA:")
@@ -114,29 +108,26 @@ while True:
         print()
         print("end of file.")
 
-
     if command == "data.cat.IP{410.904.9.5} CLASSIFIED.txt":
         print("Nice try, human.")
         print()
         time.sleep(0.5)
         print("Server switched to defense mode. All computers connected will be tracked.")
         ServerSafe = 0
-        print("Message.txt has been updated: Use the command data.escape.IP{410.904.9.5}!")
-
+        print("Message.txt has been updated: Use the commmand data.escape.IP{410.904.9.5}!")
 
     if command == "data.cat.IP{410.904.9.5} server.jar":
         print("FILE CAN NOT BE VIEWED IN TEXT BASED TERMINAL")
 
-
     if command == "data.escape.IP{410.904.9.5}":
         print("Connection terminated. If you were being tracked, we do not recommend you reenter the server.")
         print("If they got your location, which is highly likely, change your servers location with the command execute exploit-42216.exe")
-   
+    
     if command == "execute exploit-42216.exe":
         print("SERVER IP CHANGED! 810.127.2.4 ---> 127.513.6.8")
         time.sleep(1)
         print("File downloaded. Name: message.txt. Access key: 416283.")
-   
+    
     if command == "cat message.txt":
         message1key = input("Acess Key:")
         if message1key == "416283":
@@ -151,7 +142,7 @@ while True:
             time.sleep(5)
             print("Launching trojan_setup.exe")
             trojan = input("enter trojan file name:")
-           
+            
             if not (trojan == "MCP.zip" or trojan == "mcp.zip"):
                 print("INCORRECT FILE! YOU HAVE 1 TRY LEFT!")
             else:
@@ -186,7 +177,7 @@ while True:
                     time.sleep(1)
                     current_time = datetime.now()
                     finalpassword = input(f"{current_time} - Gate requires password:")
-                   
+                    
                     if finalpassword == "96035":
                         time.sleep(1)
                         current_time = datetime.now()
@@ -206,8 +197,3 @@ while True:
                         print(f"{current_time} - SERVER OFFLINE. MISSION SUCCESSFUL!")
                     else:
                         print("INCORRECT! PAYLOAD DESTROYED. MISSION FAILURE!")
-
-
-    else:
-        if command not in ["help", "list", "cat LOG-1", "cat LOCKED-1", "cat LOCKED-2", "cat LOCKED-3", "cat LOCKED-4", "cat LOCKED-5", "cat LOCKED-6", "cat LOCKED-7", "cat LOCKED-8", "cat LOCKED-9", "cat LOCKED-10", "convert LOG-1", "cat hidden.txt", "penetrate 410.904.9.5", "data.help.IP{410.904.9.5}", "data.list.IP{410.904.9.5}", "data.cat.IP{410.904.9.5} info.txt", "data.cat.IP{410.904.9.5} data.txt", "data.cat.IP{410.904.9.5} CLASSIFIED.txt", "data.cat.IP{410.904.9.5} server.jar", "data.escape.IP{410.904.9.5}", "execute exploit-42216.exe"]:
-            print("Command not recognized. Use the command help for the list of commands.")
