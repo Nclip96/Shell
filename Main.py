@@ -3,7 +3,7 @@ from datetime import datetime
 
 print("Welcome to CORE OS v1.4")
 time.sleep(0.5)
-print("enter command")
+print("Enter command. Use command help for commands list.")
 
 while True:
     command = input(">")
