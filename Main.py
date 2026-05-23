@@ -1,11 +1,3 @@
-GAME PUBLISHED!
-
-{Play Here!}
-
-# Shell v0.2
-# I started making this at school. All of a sudden, hours of my life go out the window.
-
-
 import time
 from datetime import datetime
 
