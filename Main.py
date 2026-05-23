@@ -157,7 +157,8 @@ while True:
    if command == "cat message.txt":
        message1key = input("Acess Key:")
        if message1key == "416283":
-           print("AVENGE ME. IMPORT MCP.ZIP AND DESTINATION 426.219.7.9")           time.sleep(5)
+           print("AVENGE ME. IMPORT MCP.ZIP AND DESTINATION 426.219.7.9")           
+           time.sleep(5)
            print("Launching trojan_setup.exe")
            trojan = input("enter trojan file name:")
          
